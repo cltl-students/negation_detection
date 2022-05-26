@@ -14,7 +14,8 @@ pos_tag = bitagger.tag
 from collections import Counter
 
 def process_ann():
-    """"""
+    """Preprocess and exctract features from corpus"""
+    
     corpus = 'EMCDutchClinicalCorpus'
     txt = glob.glob(os.path.join(corpus + '/DL/*.txt'))
     inputfolder = glob.glob(os.path.join(corpus + '/DL/*.ann'))
